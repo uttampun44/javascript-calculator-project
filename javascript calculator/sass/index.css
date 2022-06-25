@@ -1,0 +1,92 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #087e5a;
+  background-size: covers;
+}
+
+.parents-calculator {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.child-calculator {
+  width: 350px;
+  height: auto;
+  background-color: #d8d8d8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  border: 10px black solid;
+  border-radius: 20px;
+}
+
+.parents-calculator .child-calculator .inputs {
+  width: auto;
+  height: auto;
+}
+
+.parents-calculator .child-calculator .inputs input {
+  margin-top: 20px;
+  width: 280px;
+  height: 50px;
+  border-style: solid;
+  font-size: 20px;
+}
+
+.parents-calculator .child-calculator .calbutton {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto 1fr;
+      grid-template-columns: auto auto 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 10%;
+}
+
+.parents-calculator .child-calculator .calbutton button {
+  width: 80px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+@media (min-width: 100px) and (max-width: 370px) {
+  .parents-calculator {
+    display: block;
+  }
+}
+/*# sourceMappingURL=index.css.map */
